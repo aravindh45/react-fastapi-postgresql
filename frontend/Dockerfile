@@ -8,6 +8,6 @@ RUN npm i
 
 RUN npm run build
 
-FROM nginix:latest
+FROM nginx:latest
 
 COPY --from=build /app/build /etc/nginix/html
